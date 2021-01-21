@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Goldman&display=swap');
+
+$divBoxShadow:  2px 2px 14px rgb(149, 184, 250), inset 2px 2px 14px rgb(149, 184, 250) ;
+$fontColorMain: #5fb2ff;
+$fontColorMainHover: #c0e0ff;
+$fontColorOption: rgb(225, 245, 255);
+$backgroundColorSingleOptionHover: rgb(122, 116, 121);
+$backgroundColorButtonHover: #0f3f82;
+$shadowColor: #3264a8;
+$borderColor: rgb(207, 207, 207);
+
+@mixin font($shadowVertically, $shadowHorizontally, $shadowBlur){
+  font-family: Goldman, cursive;
+  color: $fontColorMain;
+  
+//   text-shadow: 5px 0px 20px #3264a8, 
+//  -5px 0px 20px #3264a8, 
+//  0px 5px 20px #3264a8,
+//  0px -5px 20px #3264a8;
+  text-shadow: $shadowVertically $shadowHorizontally $shadowBlur $shadowColor,
+  #{-$shadowVertically} $shadowHorizontally $shadowBlur $shadowColor,
+  $shadowHorizontally  $shadowVertically $shadowBlur $shadowColor,
+  $shadowHorizontally #{-$shadowVertically} $shadowBlur $shadowColor;
+}
+
+@mixin addLayer(){
+  .layer{
+    z-index: -1;
+    opacity: 0.5;
+  }
+}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  min-height: 100%;
+}
+body{
+  height: 100%;
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  @include font(5px, 0px, 20px);
+}
+@mixin basicWrapperStyle($width){
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  box-shadow: $divBoxShadow;
+  width: $width;
+  @include addLayer();
+  button {
+    background-color: transparent;
+    border: none;
+    padding: 15px 20px;
+    font-size: 2rem;
+    box-shadow: $divBoxShadow;
+    cursor: pointer;
+    @include font(5px, 0px, 20px);
+  }
+  button:enabled{
+    transition: all .4s linear;
+  }
+  button:enabled:hover{
+    background-color: $backgroundColorButtonHover;
+    color: $fontColorMainHover;
+  }
+  button:disabled{
+    cursor: default;
+  }
+}
+
+.wrapper{
+  @include basicWrapperStyle(1300px);
+}
+.wrapperOptionsHigher{
+  top: 100px !important;
+  width: 1100px !important;
+}
+.wrapperOptions {
+  @include basicWrapperStyle(50%);
+  .options {
+    .option {
+      font-size: 1.1rem;
+      @include font(2px, 2px, 2px);
+      color: $fontColorOption;
+      width: 180px;
+      height: 235px;
+      background-color: $backgroundColorSingleOptionHover;
+      border: 2px solid $borderColor;
+      img {
+        display: block;
+        width: 95%;
+        height: 130px;
+        border: 2px solid black;
+        margin: 5px auto;
+      }
+      input[type=radio], input[type=checkbox] {
+        display: none;
+      }
+      input[type=radio]:checked + label, input[type=checkbox]:checked + label {
+        background-color: rgba(0, 255, 0, 0.3);
+      }
+      label{
+        height: 100%;
+      }
+    }
+    ol{
+      width: 100%;
+      font-size: 1.4rem;
+      text-align: left;
+      li{
+        list-style-type: none;
+      }
+    }
+    p.final{
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.finalPanel{
+    max-width: 1600px;
+    width: 90%;
+    height: 140px;
+    box-shadow: $divBoxShadow;
+    position: absolute;
+    margin-top: 200px;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include addLayer();
+    .finalPanelDiv{
+      width: 100px;
+      height: 60%;
+    }
+    .finalPrice_container{
+      top: -30px;
+      left: 30px;
+      width: 300px;
+      height: 70px;
+      .finalPrice_layer{
+        background: repeating-linear-gradient(105deg, grey 7%, black 10%);
+      }
+      .finalPrice{
+        font-size: 1.8rem;
+        background-color: black;
+        width: 97%;
+        padding: 8px 16px;
+      }
+    }
+  
+}
+@media all and (max-width: 1800px){
+  .wrapper{
+    font-size: .7rem;
+    top: 50px;
+    width: 80%;
+  }
+  .wrapperOptionsHigher{
+    top: 20px !important;
+  }
+  .wrapperOptions{
+    top: 50px;
+    max-width: 80%;
+    .options {
+      .option{
+        height: 210px;
+      } 
+      ol{
+        font-size: 1rem;
+      }
+    }
+  }
+  .finalPanel{
+    height: 90px;
+    bottom: 40px;
+    .finalPrice_container{
+      top: -30px;
+      left: 30px;
+      width: 200px;
+      height: 40px;
+    }
+    .finalPanelDiv{
+      width: 80px;
+    }
+  }
+}
+@media all and (max-width: 800px){
+  html{
+    min-height: 150%;
+  }
+  .wrapperOptions {
+    max-width: 100%;
+    width: 95%;
+    .options{
+      .option{
+        width: 95px;
+        height: 125px;
+        img{
+          height: 70px;
+        }
+        *{
+           font-size: .6rem !important;
+        }
+      }
+    }
+  }
+  .finalPanel{
+    bottom: -10%;
+  }
+}
+
+
+/*# sourceMappingURL=index.css.map */
