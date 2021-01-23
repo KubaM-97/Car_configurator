@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a051e156.chunk.css",
+    "main.js": "/static/js/main.570011f3.chunk.js",
+    "main.js.map": "/static/js/main.570011f3.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.17cc8dbd.js",
+    "runtime-main.js.map": "/static/js/runtime-main.17cc8dbd.js.map",
+    "static/js/2.7db93aad.chunk.js": "/static/js/2.7db93aad.chunk.js",
+    "static/js/2.7db93aad.chunk.js.map": "/static/js/2.7db93aad.chunk.js.map",
+    "static/js/3.4f1410e6.chunk.js": "/static/js/3.4f1410e6.chunk.js",
+    "static/js/3.4f1410e6.chunk.js.map": "/static/js/3.4f1410e6.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.a051e156.chunk.css.map": "/static/css/main.a051e156.chunk.css.map",
+    "static/js/2.7db93aad.chunk.js.LICENSE.txt": "/static/js/2.7db93aad.chunk.js.LICENSE.txt",
+    "static/media/LED.7b061260.jpg": "/static/media/LED.7b061260.jpg",
+    "static/media/index.css": "/static/media/background.b7466b42.jpg",
+    "static/media/bodyBlue.ea664d7c.png": "/static/media/bodyBlue.ea664d7c.png",
+    "static/media/bodyLemon.1abe43ed.png": "/static/media/bodyLemon.1abe43ed.png",
+    "static/media/bodyOrange.d8d57964.png": "/static/media/bodyOrange.d8d57964.png",
+    "static/media/bodyYellow.1f7efbee.png": "/static/media/bodyYellow.1f7efbee.png",
+    "static/media/chairPurple.eab9ec53.png": "/static/media/chairPurple.eab9ec53.png",
+    "static/media/soundSystem.dd5f0c40.jpg": "/static/media/soundSystem.dd5f0c40.jpg",
+    "static/media/sportsSuspension.e05079b5.jpg": "/static/media/sportsSuspension.e05079b5.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.17cc8dbd.js",
+    "static/js/2.7db93aad.chunk.js",
+    "static/css/main.a051e156.chunk.css",
+    "static/js/main.570011f3.chunk.js"
+  ]
+}
