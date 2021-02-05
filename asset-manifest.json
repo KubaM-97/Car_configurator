@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Car_configuration/static/css/main.5983fdd7.chunk.css",
+    "main.js": "/Car_configuration/static/js/main.570011f3.chunk.js",
+    "main.js.map": "/Car_configuration/static/js/main.570011f3.chunk.js.map",
+    "runtime-main.js": "/Car_configuration/static/js/runtime-main.619b9c80.js",
+    "runtime-main.js.map": "/Car_configuration/static/js/runtime-main.619b9c80.js.map",
+    "static/js/2.7db93aad.chunk.js": "/Car_configuration/static/js/2.7db93aad.chunk.js",
+    "static/js/2.7db93aad.chunk.js.map": "/Car_configuration/static/js/2.7db93aad.chunk.js.map",
+    "static/js/3.4f1410e6.chunk.js": "/Car_configuration/static/js/3.4f1410e6.chunk.js",
+    "static/js/3.4f1410e6.chunk.js.map": "/Car_configuration/static/js/3.4f1410e6.chunk.js.map",
+    "index.html": "/Car_configuration/index.html",
+    "static/css/main.5983fdd7.chunk.css.map": "/Car_configuration/static/css/main.5983fdd7.chunk.css.map",
+    "static/js/2.7db93aad.chunk.js.LICENSE.txt": "/Car_configuration/static/js/2.7db93aad.chunk.js.LICENSE.txt",
+    "static/media/LED.7b061260.jpg": "/Car_configuration/static/media/LED.7b061260.jpg",
+    "static/media/index.css": "/Car_configuration/static/media/background.b7466b42.jpg",
+    "static/media/bodyBlue.ea664d7c.png": "/Car_configuration/static/media/bodyBlue.ea664d7c.png",
+    "static/media/bodyLemon.1abe43ed.png": "/Car_configuration/static/media/bodyLemon.1abe43ed.png",
+    "static/media/bodyOrange.d8d57964.png": "/Car_configuration/static/media/bodyOrange.d8d57964.png",
+    "static/media/bodyYellow.1f7efbee.png": "/Car_configuration/static/media/bodyYellow.1f7efbee.png",
+    "static/media/chairPurple.eab9ec53.png": "/Car_configuration/static/media/chairPurple.eab9ec53.png",
+    "static/media/soundSystem.dd5f0c40.jpg": "/Car_configuration/static/media/soundSystem.dd5f0c40.jpg",
+    "static/media/sportsSuspension.e05079b5.jpg": "/Car_configuration/static/media/sportsSuspension.e05079b5.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.619b9c80.js",
+    "static/js/2.7db93aad.chunk.js",
+    "static/css/main.5983fdd7.chunk.css",
+    "static/js/main.570011f3.chunk.js"
+  ]
+}
