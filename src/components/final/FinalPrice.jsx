@@ -9,7 +9,7 @@ const FinalPrice = props => {
     <div className="finalPrice_container position-absolute bg-info d-flex justify-content-center align-items-center">
         <div className="finalPrice_layer position-absolute w-100 h-100"> </div>
         <div className="finalPrice position-absolute">
-        {formatPrice(TotalPrice)} zł
+         € {formatPrice(TotalPrice)}
         </div>
     </div>
     )

@@ -14,9 +14,9 @@ class RimSize extends Component {
         super()
         this.state = {
             rimsSize: [
-                {id: uniqid(), img: Rim15, name: "15-cali", price: 800},
-                {id: uniqid(), img: Rim16, name: "16-cali", price: 1400},
-                {id: uniqid(), img: Rim17, name: "17-cali", price: 2200}
+                {id: uniqid(), img: Rim15, name: "15 inches", price: 800},
+                {id: uniqid(), img: Rim16, name: "16 inches", price: 1400},
+                {id: uniqid(), img: Rim17, name: "17 inches", price: 2200}
             ],
             isButtonDisabled: true
         }
@@ -24,18 +24,18 @@ class RimSize extends Component {
        
     render(){
         const items = this.state.rimsSize.map(el => {
-            return <Item key={el.id} id={el.id} img={el.img} name={el.name} price={el.price} inputNameAttr="rimSize" category="Rozmiar obręczy"
+            return <Item key={el.id} id={el.id} img={el.img} name={el.name} price={el.price} inputNameAttr="rimSize" category="Rim Size"
                     onActive={ propsChildren => { handleButtonActivation(propsChildren.inputNameAttr, this) }} />
         })
 
         return(
             <div className="wrapperOptions mx-auto p-md-5 py-3">
               <div className="layer position-absolute fixed-top bg-dark w-100 h-100"></div>
-                <h3>Rozmiaru obręczy</h3>
+                <h3>Rim Size</h3>
                 <div className="options d-flex justify-content-evenly flex-wrap mt-4">
                     {items}
                 </div>
-                <button disabled={this.state.isButtonDisabled} onClick={()=>this.props.onGoOn()} className="m-5 px-5">Dalej!!!</button>
+                <button disabled={this.state.isButtonDisabled} onClick={()=>this.props.onGoOn()} className="m-5 px-5">Continue!!!</button>
             </div>
         )
     }

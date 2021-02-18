@@ -15,9 +15,9 @@ class Accessories extends Component {
         super()
         this.state = {
             accessories: [
-                {id: uniqid(), img: LED, name: "Oświetlenie LED", price: 270},
-                {id: uniqid(), img: soundSystem, name: "System dźwiękowy", price: 480},
-                {id: uniqid(), img: sportsSuspension, name: "Zawieszenie sportowe", price: 1410}
+                {id: uniqid(), img: LED, name: "LED", price: 270},
+                {id: uniqid(), img: soundSystem, name: "Sound System", price: 480},
+                {id: uniqid(), img: sportsSuspension, name: "Sports Suspension", price: 1410}
             ],
             isButtonDisabled: true
         }
@@ -47,14 +47,14 @@ class Accessories extends Component {
                     img: el.img,
                     price: el.price,
                     inputNameAttr: "accessories",
-                    category: "Dodatkowe akcesoria"
+                    category: "Accessories"
                 }, e.target.checked)}/>
 
                 <label htmlFor={el.id} className="d-flex flex-wrap align-items-center">
                         <img className="mb-1" src={el.img} alt={el.name}/>
                         <div className="d-flex justify-content-center flex-wrap align-items-center">
                             <p className="my-1">{el.name}</p>
-                            <p className="my-1">Cena: <strong>{formatPrice(el.price)} zł</strong></p>
+                            <p className="my-1">Price: € <strong>{formatPrice(el.price)}</strong></p>
                         </div>
                 </label>
             </div> 
@@ -64,11 +64,11 @@ class Accessories extends Component {
         return(
             <div className="wrapperOptions mx-auto p-5 pb-1">
               <div className="layer position-absolute fixed-top bg-dark w-100 h-100"></div>
-                <h3>Dodatkowe akcesoria</h3>
+                <h3>Additional accessories</h3>
                 <div className="options d-flex justify-content-evenly flex-wrap mt-4">
                     {items}
                 </div>
-                <button onClick={()=>this.props.onGoOn()} className="m-5">Podsumuj</button>
+                <button onClick={()=>this.props.onGoOn()} className="m-5">Summarize</button>
             </div>
         )
     }

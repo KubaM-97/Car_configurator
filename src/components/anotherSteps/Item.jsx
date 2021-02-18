@@ -43,7 +43,7 @@ class Item extends Component{
                         <img className="mb-1" src={this.props.img} alt={this.props.name}/>
                         <div className="d-flex justify-content-center flex-wrap align-items-center">
                             <p className="my-1 w-100">{this.props.name}</p>
-                            <p className="my-1 w-100">Cena: <strong>{formatPrice(this.props.price)} zł</strong></p>
+                            <p className="my-1 w-100">Price: € <strong>{formatPrice(this.props.price)}</strong></p>
                         </div>
                 </label>
             </div> 

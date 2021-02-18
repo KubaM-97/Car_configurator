@@ -17,12 +17,12 @@ class Armchair extends Component {
         super()
         this.state = {
             armchairs: [
-                {id: uniqid(), img: chairBlack, name: "Czarne", price: 750},
-                {id: uniqid(), img: chairYellow, name: "Złote", price: 750},
-                {id: uniqid(), img: chairGreen, name: "Zielone", price: 750},
-                {id: uniqid(), img: chairPurple, name: "Fioletowe", price: 750},
-                {id: uniqid(), img: chairRed, name: "Czerwone", price: 750},
-                {id: uniqid(), img: chairBlue, name: "Niebieskie", price: 750}
+                {id: uniqid(), img: chairBlack, name: "Black", price: 750},
+                {id: uniqid(), img: chairYellow, name: "Golden", price: 750},
+                {id: uniqid(), img: chairGreen, name: "Green", price: 750},
+                {id: uniqid(), img: chairPurple, name: "Purple", price: 750},
+                {id: uniqid(), img: chairRed, name: "Red", price: 750},
+                {id: uniqid(), img: chairBlue, name: "Blue", price: 750}
             ],
             isButtonDisabled: true
         }
@@ -30,18 +30,18 @@ class Armchair extends Component {
        
     render(){
         const items = this.state.armchairs.map(el => {
-            return <Item key={el.id} id={el.id} img={el.img} name={el.name} price={el.price} inputNameAttr="armchair" category="Fotele"
+            return <Item key={el.id} id={el.id} img={el.img} name={el.name} price={el.price} inputNameAttr="armchair" category="Armchairs"
                     onActive={ propsChildren => { handleButtonActivation(propsChildren.inputNameAttr, this) }} />
         })
 
         return(
             <div className="wrapperOptions wrapperOptionsHigher mx-auto p-md-5 py-3">
               <div className="layer position-absolute fixed-top bg-dark w-100 h-100"></div>
-                <h3>Wybór fotela</h3>
+                <h3>Armchair</h3>
                 <div className="options d-flex justify-content-evenly flex-wrap mt-4">
                     {items}
                 </div>
-                <button disabled={this.state.isButtonDisabled} onClick={()=>this.props.onGoOn()} className="m-5 px-5">Dalej!!!</button>
+                <button disabled={this.state.isButtonDisabled} onClick={()=>this.props.onGoOn()} className="m-5 px-5">Continue!!!</button>
             </div>
         )
     }

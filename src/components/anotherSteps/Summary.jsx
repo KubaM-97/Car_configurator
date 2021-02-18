@@ -12,13 +12,13 @@ const Summary = props => {
     return(
 <           div className="wrapperOptions wrapperOptionsHigher mx-auto p-lg-2 py-1">
               <div className="layer position-absolute fixed-top bg-dark w-100 h-100"></div>
-                <h3 className="pt-3">Oto wybrane produkty</h3>
+                <h3 className="pt-3">Your Products</h3>
                 <hr className="border border-5 bg-danger"/>
                 <div className="options d-flex justify-content-evenly flex-wrap mt-lg-4 p-lg-5">
                     <ol>
                         {items}
                     </ol>
-                    <p className="final p-lg-3 p-1 border border-3">Razem: {formatPrice(props.totalSum)} zł</p>
+                    <p className="final p-lg-3 p-1 border border-3">Total: € {formatPrice(props.totalSum)}</p>
                 </div>
             </div>
 )}
