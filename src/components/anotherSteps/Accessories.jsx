@@ -53,7 +53,7 @@ class Accessories extends Component {
                 <label htmlFor={el.id} className="d-flex flex-wrap align-items-center">
                         <img className="mb-1" src={el.img} alt={el.name}/>
                         <div className="d-flex justify-content-center flex-wrap align-items-center">
-                            <p className="my-1">{el.name}</p>
+                            <p className="my-1">{el.name} </p>
                             <p className="my-1">Price: € <strong>{formatPrice(el.price)}</strong></p>
                         </div>
                 </label>
