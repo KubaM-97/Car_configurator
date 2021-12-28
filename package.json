@@ -2,7 +2,7 @@
   "name": "car_configuration",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://KubaM-97.github.io/Car_configuration/",
+  "homepage": "https://kubaM-97.github.io/Car_configuration/",
   "dependencies": {
     "bootstrap": "^4.5.3",
     "react": "^17.0.1",
